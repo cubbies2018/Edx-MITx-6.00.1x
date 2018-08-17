@@ -25,7 +25,7 @@ C.
 2. first option
 3. second option
 
-#3 (guess my number)
+guess my number
 print("Please think of a number between 0 and 100!")
 hlc, lo, hi = None, 0, 100
 while hlc != 'c':
@@ -43,7 +43,7 @@ while hlc != 'c':
     else:
         print('Sorry, I did not understand your input.')
         
- #4
+ #3
  1. False
  2. 1011
  3. True
