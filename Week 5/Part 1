@@ -1,1 +1,116 @@
+Finger Exercises
+#1
+1. fourth option
+2. obj.doSomething()
+3. False
+4. self.number = number, self.streetName = streetName
 
+#2
+1. 5:30
+2. 10:30
+3. 10:30, No
+
+#3
+1. NoneType, error
+2. NoneType, error
+3. int, 7
+4. int, 8
+5. int, 17
+6. int, 18
+7. int, 7
+8. int, 18
+9. int, 31
+10. int, 7
+11. int, 44
+12. int, 8
+
+coordinate
+class Coordinate(object):
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+ 
+    def getX(self):
+        # Getter method for a Coordinate object's x coordinate.
+        # Getter methods are better practice than just accessing an attribute directly
+        return self.x
+ 
+    def getY(self):
+        # Getter method for a Coordinate object's y coordinate
+        return self.y
+ 
+    def __str__(self):
+        return '<' + str(self.getX()) + ',' + str(self.getY()) + '>'
+        
+    def __eq__(self, other):            
+        if other.x == self.x and other.y == self.y:
+            return True
+        else:
+            return False
+           
+    def __repr__(self):
+        return "Coordinate"+ str((self.x, self.y))
+
+int set
+class intSet(object):
+    def __init__(self):
+        """Create an empty set of integers"""
+        self.vals = []
+
+    def insert(self, e):
+        """Assumes e is an integer and inserts e into self""" 
+        if not e in self.vals:
+            self.vals.append(e)
+
+    def member(self, e):
+        """Assumes e is an integer
+           Returns True if e is in self, and False otherwise"""
+        return e in self.vals
+
+    def remove(self, e):
+        """Assumes e is an integer and removes e from self
+           Raises ValueError if e is not in self"""
+        try:
+            self.vals.remove(e)
+        except:
+            raise ValueError(str(e) + ' not found')
+
+    def __str__(self):
+        """Returns a string representation of self"""
+        self.vals.sort()
+        return '{' + ','.join([str(e) for e in self.vals]) + '}'
+        
+    def intersect(self, other):
+        self.result = []
+        for i in self.vals:
+            if i in other.vals:
+                self.result.append(i)
+        return '{' + ','.join([str(f) for f in self.result]) + '}' 
+            
+    def __len__(self):
+        #return len(self.vals)
+        self.counter = 0
+        for i in self.vals:
+            self.counter += 1
+        return self.counter
+
+spell
+1. Spell
+2. Accio, Confundo
+3. Accio, Summoning Charm Accio, No description, Confundus Charm Confundo, Causes the victim to become confused and befuddled
+4. last option
+5.
+class Accio(Spell):
+    def __init__(self):
+        Spell.__init__(self, 'Accio', 'Summoning Charm')
+    def getDescription(self):
+        return 'This charm summons an object to the caster, potentially over a significant distance.' 
+
+#4
+1. 2
+2. 3
+3. 5
+4. 6
+5. A.x
+6. C.y
+7. D.z
