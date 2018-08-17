@@ -1,1 +1,66 @@
-
+Finger Exercises for part 1
+#1
+  1. first option 
+  2. True
+  3. False
+  4. first and last option
+#2
+  1. True
+  2. True
+  3. True
+#3
+  1. False
+  2. False
+  3. third option
+  4. third option
+  5. False
+#4
+  1. Syntax
+  2. Static semantics
+  3. Semantics
+#5
+  1. float
+  2. int
+  3. bool
+  4. NoneType
+  5. float
+#6
+  1. 15
+  2. 6.0
+  3. 4
+  4. 3.3333
+  5. 3.3333
+  6. 20
+  7. 14
+  8. 9
+  9. 4.41
+  10. 6.6000
+#7
+  1. float, 5.0
+  2. float, 4.0
+  3. error, NoneType
+#8
+  1. False
+  2. True
+  3. False
+  4. False
+  5. True
+  6. True
+  7. False
+  8. True
+  9. False
+  10. False
+  11. True
+  12. False
+#9
+  1. int, 3
+  2. bool, True
+#10
+  1. float, 8.0
+  2. float, 2.5
+  3. bool, True
+  4. float, 2.5
+  5. int, 3
+  6. int, 2
+  7. float, 7.0
+  8. bool, True
