@@ -1,1 +1,55 @@
+def hangman(secretWord):
+    '''
+    secretWord: string, the secret word to guess.
 
+    Starts up an interactive game of Hangman.
+
+    * At the start of the game, let the user know how many 
+      letters the secretWord contains.
+
+    * Ask the user to supply one guess (i.e. letter) per round.
+
+    * The user should receive feedback immediately after each guess 
+      about whether their guess appears in the computers word.
+
+    * After each round, you should also display to the user the 
+      partially guessed word so far, as well as letters that the 
+      user has not yet guessed.
+
+    Follows the other limitations detailed in the problem write-up.
+    '''
+    print ("Welcome to the game, Hangman!")
+    print ("I am thinking of a word that is" + " " + str(len(secretWord)) + " " + "letters long.")
+    print ("------------")
+    #print (secretWord)
+    maxguesses = 8
+    guesses = 0
+    lettersGuessed = list()
+    while guesses < maxguesses:
+        remainingguesses = maxguesses - guesses
+        print ("You have" + " " + str(remainingguesses) + " " + "guesses left.")
+        K = getAvailableLetters(lettersGuessed)
+        print ("Available letters:" + " " + str(K))
+        P = input("Please guess a letter: ")
+        P = P.lower()
+        validguess = P in K
+        if validguess:
+            lettersGuessed.append(P)
+            if isWordGuessed(secretWord, lettersGuessed):
+                print ("Good guess:" + " " + str(getGuessedWord(secretWord, lettersGuessed)))
+                print ("------------")
+                print ("Congratulations, you won!")
+                break
+            correctguess = P in secretWord
+            if correctguess:    
+                print ("Good guess:" + " " + str(getGuessedWord(secretWord, lettersGuessed)))
+                print ("------------")
+            if not correctguess:
+                guesses = guesses + 1
+                print ("Oops! That letter is not in my word:" + " " + str(getGuessedWord(secretWord, lettersGuessed)))
+                print ("------------")
+        if not validguess:
+           print ("Oops! You've already guessed that letter:" + " " + str(getGuessedWord(secretWord, lettersGuessed)))
+           print ("------------")
+    if guesses >= maxguesses:
+        print ("Sorry, you ran out of guesses. The word was" + " " + str(secretWord) + ".")
