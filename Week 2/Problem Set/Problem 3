@@ -1,0 +1,37 @@
+def finalBalance(balance, annualInterestRate, trialPayment):
+    monthlyInterestRate = annualInterestRate / 12.0
+    for j in range(12):
+        monthlyUnpaidBalance =  balance - trialPayment
+        balance = monthlyUnpaidBalance + (monthlyInterestRate * monthlyUnpaidBalance)
+    return balance 
+
+monthlyInterestRate = annualInterestRate / 12.0
+upperbound = (balance * (1 + monthlyInterestRate)**12) / 12.0
+
+notconverged = True
+
+lowerbound = balance / 12.0
+shot2 = finalBalance(balance, annualInterestRate, lowerbound)
+
+TrialPayment = (upperbound + lowerbound) / 2
+shot = finalBalance(balance, annualInterestRate, TrialPayment)
+
+shot3 = finalBalance(balance, annualInterestRate, upperbound)
+
+while notconverged == True:
+    if (upperbound - lowerbound) < 0.002:
+        #print ("lower and upper bound: " + str(lowerbound) + " " + str(upperbound))
+        notconverged = False
+    if shot < 0:
+        upperbound = TrialPayment
+    if shot > 0:
+        lowerbound = TrialPayment
+    
+    shot2 = finalBalance(balance, annualInterestRate, lowerbound)
+
+    TrialPayment = (upperbound + lowerbound) / 2
+    shot = finalBalance(balance, annualInterestRate, TrialPayment)
+    
+    shot3 = finalBalance(balance, annualInterestRate, upperbound)
+    
+print ("Lowest Payment: " + str(round(TrialPayment, 2)))
