@@ -1,0 +1,50 @@
+Finger Exercises
+#1
+A.
+1. 12
+2. 24
+3. 36
+4. 48
+5. 60
+
+B.
+1. 12
+2. 12
+3. 12
+4. 12
+5. 12
+
+C.
+1. 5
+2. 4
+3. 12
+4. 1
+
+#2
+1. last option
+2. first option
+3. second option
+
+#3 (guess my number)
+print("Please think of a number between 0 and 100!")
+hlc, lo, hi = None, 0, 100
+while hlc != 'c':
+    guess = (hi + lo) // 2
+    print('Is your secret number ' + str(guess) + '?')
+    hlc = input("Enter 'h' to indicate the guess is too high. " +
+                "Enter 'l' to indicate the guess is too low. " +
+                "Enter 'c' to indicate I guessed correctly. ")
+    if hlc == 'c':
+        print('Game over. Your secret number was:', guess)
+    elif hlc == 'h':
+        hi = guess
+    elif hlc == 'l':
+        lo = guess
+    else:
+        print('Sorry, I did not understand your input.')
+        
+ #4
+ 1. False
+ 2. 1011
+ 3. True
+ 4. third option
