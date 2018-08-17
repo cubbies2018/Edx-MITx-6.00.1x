@@ -1,0 +1,13 @@
+cur = s[0]
+lng = s[0]
+jnow = 0
+while jnow < len(s) - 1:
+    jnow = jnow + 1
+    if s[jnow] >= s[jnow - 1]:
+        cur = cur + s[jnow]
+        if len(cur) > len(lng):
+            lng = cur
+    else:
+        cur = s[jnow]
+        
+print ("Longest substring in alphabetical order is: " + lng)
