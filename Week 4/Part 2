@@ -1,1 +1,51 @@
+Finger Exercises
+#1
+1. third option
+2. thirs option
+3. last option
+4. second option
+5. fourth option
 
+#2
+A.
+1. 1,0
+2. -1,0
+3. 0, error
+
+B.
+1. 1,0
+2. 1,0,0
+3. -2,0
+
+C.
+1. 1,0
+2. 1,0,0
+3. 0,-2
+
+D.
+No
+
+E.
+Yes
+
+simple division
+def simple_divide(item, denom):
+    try:
+       item / denom
+    except ZeroDivisionError:
+        return (0)
+    else:  
+       return item / denom     
+
+#3
+A.
+1. Yes
+2. ZeroDivisionError
+3. Invalid maximum element
+4. post condition
+5. pre condition
+
+B.
+1. pre condition
+2. post condition
+3. Cannot divide by 0
