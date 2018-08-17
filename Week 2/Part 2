@@ -1,0 +1,122 @@
+Finger Exercises
+
+#1
+1. num
+2. float
+3. num
+4. boolean
+5. boolean
+6. NoneType
+
+square
+def square(x):
+    return (x**2)
+
+eval quadratic
+def evalQuadratic(a, b, c, x):
+    return ((a*(x**2)+b*x+c))
+
+#2
+1. int, 7
+2. float, -4.3
+3. int, 9
+4. float, 4.0
+5. NoneType, error
+6. boolean, False
+7. function, function
+
+#3
+1. int, 3 
+2. int, 3
+3. function, function
+4. NoneType, error
+
+#4
+1. int, 4
+2. int, 19
+ 
+#5
+1. 11
+2. 1
+3. 5
+4. 3
+
+#6
+1. function, function 
+2. string, EXTERMINATE!
+3. string, exterminate!
+4. boolean, False
+5. boolean, True
+6. string, Number one - the larch
+7. string, nUMBERONE - THE LARCH
+8. int, 0
+9. int, 8
+10. int, 8
+11. NoneType, error
+12. int, -1
+13. int, 3
+14. string, *xt*rminat*!
+15. string, Number seven - the larch
+
+fourth power
+def fourthPower(x):
+    return (square(square(x)))
+
+odd
+def odd(x):
+    return bool(x%2)
+
+power iter
+def iterPower(base, exp):
+    result = 1
+    while exp > 0:
+        result *= base
+        exp -= 1
+    return result
+
+power recur
+def recurPower(base, exp):
+    if exp == 0:
+        return 1
+    else:
+        return base * recurPower(base, exp-1)
+
+gcd iter
+def gcdIter(a, b):
+    if a == b:
+        return a
+    temp = 0
+    for gdc in range(1, max(a, b)):
+        if (a % gdc == 0) & (b % gdc == 0):
+            temp = gdc
+    return temp
+
+gcd recur
+def gcdRecur(a, b):
+    if b == 0:
+        return a
+    t = b
+    b = a % b
+    a = t
+    return gcdRecur(a,b)
+
+is in
+def isIn(char, aStr):
+    if len(aStr) == 0:
+        return False
+    elif len(aStr) == 1:
+        return char == aStr
+    else:
+        mid = len(aStr)//2
+    if char == aStr[mid]:
+        return True
+    elif char < aStr[mid]:
+        return isIn(char, aStr[:mid])
+    else:
+        return isIn(char, aStr[mid+1:])
+
+#7
+1. first option
+2. last option
+3. second option
+4. third option
