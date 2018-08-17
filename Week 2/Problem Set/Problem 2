@@ -1,0 +1,15 @@
+def finalBalance(balance, annualInterestRate, trialPayment):
+    monthlyInterestRate = annualInterestRate / 12.0
+    for j in range(12):
+        monthlyUnpaidBalance =  balance - trialPayment
+        balance = monthlyUnpaidBalance + (monthlyInterestRate * monthlyUnpaidBalance)
+    return balance 
+
+lowerbound = balance / 12.0
+rlowerbound = round(lowerbound, -1)
+shot = finalBalance(balance, annualInterestRate, rlowerbound)
+while shot > 0:    
+    shot = finalBalance(balance, annualInterestRate, rlowerbound)
+    if shot > 0:
+        rlowerbound = rlowerbound + 10
+print ("Lowest Payment: " + str(rlowerbound))
