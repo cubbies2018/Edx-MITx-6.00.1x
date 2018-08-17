@@ -1,1 +1,16 @@
-
+def getGuessedWord(secretWord, lettersGuessed):
+    '''
+    secretWord: string, the word the user is guessing
+    lettersGuessed: list, what letters have been guessed so far
+    returns: string, comprised of letters and underscores that represents
+      what letters in secretWord have been guessed so far.
+    '''
+    L1 = list(secretWord)
+    wordlen = len(L1)
+    outstring = L1
+    for i in range(wordlen):       
+        if L1[i]  in lettersGuessed:
+            outstring[i] = L1[i]
+        else:
+            outstring[i]="_"
+    return ''.join(outstring)
