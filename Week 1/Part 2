@@ -17,7 +17,6 @@ A.
 5. int, 5
 
 B.
-
 1. NoneType, error
 2. string, 'hello,world'
 3. string, 'hello, world'
@@ -25,7 +24,6 @@ B.
 5. boolean, True
 
 C.
-
 1. boolean, False
 2. boolean, False
 3. boolean, True
@@ -33,7 +31,6 @@ C.
 5. string, 'wor'
 
 D.
-
 1. string, 'worl'
 2. string, 'ello'
 3. string, 'elloworl'
@@ -50,11 +47,11 @@ D.
 #4
 print ("hello world")
 
-#5 (happy)
+happy
 if happy > 2:
 print ("hello world")
 
-#6 (vara varb)
+vara varb
 if type(varA) == str or type(varB) == str:
     print ("string involved")
 elif varA > varB:
@@ -64,14 +61,14 @@ elif varA == varB:
 elif varA < varB:
     print ("smaller")
 
-#7
+#5
 1. 0, 1, 2, 3, 4, 5, Outside of loop, 6
 2. infinite loop
 3. 9, 8, 7, 6, 5, 4, 3
 4. 10, 9, 8, 7, Breaking out of loop, Outside of loop
 5. infinite loop
 
-#8 (while)
+while
 1.
 num = 2
 counter = 1
@@ -98,7 +95,7 @@ while counter <= end:
     counter += 1
 print(num)
 
-#9 (for)
+for
 1.
 for i in range(2, 12, 2):
     print (i)
@@ -113,14 +110,14 @@ for i in range(1, end+1):
     result = result + i
 print (result)
 
-#10
+#6
 1. 0,1,2,3,4,4
 2. 0.0,1.0,2.0,3.0,4.0
 3. 0,Foo!,4,8,12,16,Foo!
 4. h,o,l,a
 5. Letter #0 is S, 1
 
-#11
+#7
 A.
 1. 1
 2. 1
@@ -129,7 +126,6 @@ A.
 5. 1
 
 B.
-
 1. 1
 2. 2
 3. 3
@@ -138,13 +134,12 @@ B.
 6. 1
 
 C.
-
 1. 0
 2. 1
 3. 11
 4. -25
 
-#12
+#8
 1. No
 2. No
 3. Yes
