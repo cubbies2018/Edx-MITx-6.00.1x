@@ -1,0 +1,152 @@
+Finger Exercises
+#1	
+1. abc
+2. bcbcbc
+3. error
+4. c
+5. ab
+6. ab
+7. cd
+
+#2 (ungraded)
+A.
+1. string, 'hello'
+2. string, 'h'
+3. string, 'e'
+4. string, 'o'
+5. int, 5
+
+B.
+
+1. NoneType, error
+2. string, 'hello,world'
+3. string, 'hello, world'
+4. string, 'worldworldworld'
+5. boolean, True
+
+C.
+
+1. boolean, False
+2. boolean, False
+3. boolean, True
+4. string, 'or'
+5. string, 'wor'
+
+D.
+
+1. string, 'worl'
+2. string, 'ello'
+3. string, 'elloworl'
+4. string, 'elwr'
+5. string, 'dlrowolleh'
+
+#3
+1. blank
+2. Nope
+3. Regal!
+4. Hot
+5. Cold
+
+#4
+print ("hello world")
+
+#5 (happy)
+if happy > 2:
+print ("hello world")
+
+#6 (vara varb)
+if type(varA) == str or type(varB) == str:
+    print ("string involved")
+elif varA > varB:
+    print ("bigger")
+elif varA == varB:
+    print ("equal")
+elif varA < varB:
+    print ("smaller")
+
+#7
+1. 0, 1, 2, 3, 4, 5, Outside of loop, 6
+2. infinite loop
+3. 9, 8, 7, 6, 5, 4, 3
+4. 10, 9, 8, 7, Breaking out of loop, Outside of loop
+5. infinite loop
+
+#8 (while)
+1.
+num = 2
+counter = 1
+holder = 2
+while True:
+    print(holder)
+    if(holder == 10):
+        print("Goodbye!")
+        break
+    holder=0
+    counter+=1
+    holder = counter * num
+2.
+print("Hello!")
+num = 10
+while num != 0:
+    print(num)
+    num-=2
+3.
+num = 0
+counter = 0
+while counter <= end:
+    num += counter
+    counter += 1
+print(num)
+
+#9 (for)
+1.
+for i in range(2, 12, 2):
+    print (i)
+print ("Goodbye!")
+2.
+print ("Hello!")
+for i in range(10, 0, -2):
+    print(i)
+3.
+result = 0
+for i in range(1, end+1):
+    result = result + i
+print (result)
+
+#10
+1. 0,1,2,3,4,4
+2. 0.0,1.0,2.0,3.0,4.0
+3. 0,Foo!,4,8,12,16,Foo!
+4. h,o,l,a
+5. Letter #0 is S, 1
+
+#11
+A.
+1. 1
+2. 1
+3. 2
+4. 1
+5. 1
+
+B.
+
+1. 1
+2. 2
+3. 3
+4. 1
+5. 2
+6. 1
+
+C.
+
+1. 0
+2. 1
+3. 11
+4. -25
+
+#12
+1. No
+2. No
+3. Yes
+4. Yes
+5. Yes
