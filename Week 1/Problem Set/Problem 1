@@ -1,0 +1,18 @@
+count = 0
+my_character = 'a'
+my_character2 = 'e'
+my_character3 = 'i'
+my_character4 = 'o'
+my_character5 = 'u'
+for j in range(len(s)):
+    if s[j] == my_character:
+        count += 1
+    elif s[j] == my_character2:
+        count += 1
+    elif s[j] == my_character3:
+        count += 1
+    elif s[j] == my_character4:
+        count += 1
+    elif s[j] == my_character5:
+        count += 1
+print ("Number of vowels: " + str(count))
