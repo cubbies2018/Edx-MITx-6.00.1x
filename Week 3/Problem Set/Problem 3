@@ -1,1 +1,14 @@
-
+import string
+def getAvailableLetters(lettersGuessed):
+    '''
+    lettersGuessed: list, what letters have been guessed so far
+    returns: string, comprised of letters that represents what letters have not
+      yet been guessed.
+    '''
+    letters = list(string.ascii_lowercase)
+    L1 = set(letters)
+    L2 =set(lettersGuessed)
+    diffset1 = L1 - L2
+    letters2 = list(diffset1)
+    o = sorted(letters2)
+    return ''.join(o)
