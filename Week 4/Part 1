@@ -1,1 +1,31 @@
+Finger Exercises
+#1
+Empty set, Set of size 1, Set of size greater than 1
 
+#2
+All answers
+
+#3
+first option
+
+#4
+last option
+
+#5
+third option
+
+integer division
+def integerDivision(x, a):
+    count = 0
+    while x >= a:
+        count += 1
+        x = x - a
+    return count
+
+#6
+1. last option
+2. return rem(x-a,a)
+
+#7
+1. second option
+2. return 1
