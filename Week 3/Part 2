@@ -1,1 +1,30 @@
+Finger Exercises
+#1
+1. {'a': 'aardvark', 'b': 'baboon', 'c': 'coati', 'd': 'donkey'}
+2. coati
+3. error
+4. 4
+5. anteater
+6. 8
+7. False
+8. True
+9. True
+10. ['a','b','c','d']
+11. 3
+12. ['anteater', 'coati', 'donkey']
 
+how many
+def how_many(aDict):
+    a=0
+    for i in aDict:
+        a+=len(aDict[i])
+    return a
+
+biggest
+def biggest(aDict):
+    if len(aDict) == 0:
+        return None
+    biggestLen = max(map(len, aDict.values()))
+    for l in aDict:
+        if len(aDict[l]) == biggestLen:
+            return l
