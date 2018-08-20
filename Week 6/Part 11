@@ -1,1 +1,74 @@
+Finger Exercises
+#1
+1. third option
+2. last option
+3. fourth option
+4. 1
+5. 2*n + 1
 
+#2
+A.
+3003, 5*n + 3003
+
+B.
+2003, 5*log2(n) + 2008
+
+C.
+3, 7*n + 2
+
+#3
+A.
+2, 3*n^2 + n + 2
+
+B.
+2, 4*n^2 + n + 2
+
+C.
+2, n^2 + 2*n + 2
+
+D.
+1. O(n^2)
+2. O(n^2)
+3. O(n^2)
+
+#4
+1. O(n)
+2. O(n)
+3. O(1)
+4. O(n^2)
+
+#5
+1. O(n)
+2. O(n^c)
+3. O(n)
+4. O(n^c)
+5. O(n^c)
+6. O(n^c)
+7. O(n log(n))
+8. O(1)
+9. O(c^n)
+10. O(log(n))
+
+#6
+1. O(1)
+2. O(b)
+3. O(b)
+4. O(log(b))
+
+#7
+1. O(len(s))
+2. O(log(len(s)))
+3. O(n^2)
+4. O(n^2)
+
+#8 (ungraded)
+500,000 
+log log n
+log n
+n
+n log n
+n**2
+n**3
+3**n
+n**n
+2**(n**2)
