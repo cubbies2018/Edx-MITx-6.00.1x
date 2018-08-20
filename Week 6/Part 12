@@ -1,1 +1,47 @@
+Finger Exercises
+#1
+A.
+1. 1
+2. 0
+3. 3
+4. 2
+5. 3
+6. 3
+7. error
+8. 4
 
+B.
+foo(a) and foo(b)
+
+C.
+1. 1
+2. impossible
+
+#2
+first option
+
+#3
+first option
+
+#4
+third option
+
+#5
+1. Yes
+2. second option
+3. first option
+
+#6
+1. yes
+2. first option
+3. first option
+4. last option
+
+#7
+1. O(n)
+2. O(n log n)
+3. O(kn)
+4. O(n log n + k log n)
+5. k = 1
+6. k = log n
+7. application B
